@@ -22,7 +22,7 @@
     "maquette"
   ],
   "dependencies": {
-    "maquette": "^1.5.2",
+    "maquette": "^1.6.0",
     "vdom-benchmark-base": "^0.2.2"
   },
   "devDependencies": {
