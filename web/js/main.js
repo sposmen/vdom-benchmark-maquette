@@ -6,7 +6,7 @@ var maquette = require('maquette');
 var h = maquette.h;
 
 var NAME = 'maquette';
-var VERSION = '1.6.0';
+var VERSION = '2.3.2';
 
 function convertToVnode(node) {
   if (node.children) {
@@ -32,7 +32,7 @@ BenchmarkImpl.prototype.tearDown = function() {
 };
 
 BenchmarkImpl.prototype.render = function() {
-  this.projection = maquette.createDom(h("div.container", this.a.map(convertToVnode)));
+  this.projection = maquette.dom.create(h("div.container", this.a.map(convertToVnode)));
   this.container.appendChild(this.projection.domNode);
 };
 
